@@ -1,8 +1,12 @@
+import { useModal } from "../../hooks/modalHooks";
 
 function About(props) {
-  return (<div>
-    About..
-  </div>)
+    const [isOpen, toggleModal] = useModal();
+
+    return (<div>
+        About..
+        <button onClick={toggleModal}>toggle Modal</button>
+    </div>)
 }
 
 export default About;
