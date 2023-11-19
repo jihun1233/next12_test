@@ -22,13 +22,14 @@ export default function Home() {
         </h1>
 
         {/* test */}
+        <br></br>
         <button onClick={toggleModal}>toggle Modal</button>
         <Link href={'About'}>
-        <a>
-          go to About
-        </a>
+          <a>go to About</a>
         </Link>
-
+        <Link href={'Transfer'}>
+          <a>이체</a>
+        </Link>
         <p className={styles.description}>
           Get started by editing{' '}
           <code className={styles.code}>pages/index.js</code>
