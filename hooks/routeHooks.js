@@ -11,5 +11,9 @@ export const useDGBRouter = () => {
         router.back()
     }
 
-    return {routeWithPath, goBack};
+    const replaceWithPath = (path) => {
+        router.replace(path)
+    }
+
+    return {routeWithPath, replaceWithPath, goBack};
 }
